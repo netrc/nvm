@@ -12,6 +12,11 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
   </head>
   <body>
     <div class="wrapper">
@@ -21,6 +26,13 @@
         </a>
         <h1 class="header">NVM</h1>
         <p class="header"><i>the radical future of nvm</i></p>
+
+        <div id="tabs">
+        <ul>
+        	<li> <a href="#tabs-1"> Recent News </a> </li>
+        	<li> <a href="#tabs-2"> FAQ </a> </li>
+        	<li> <a href="#tabs-3"> Links </a> </li>
+        </ul>
 
         <ul>
           <li class="download"><a class="buttons" href="https://github.com/netrc/nvm/zipball/master">Download ZIP</a></li>
@@ -37,12 +49,50 @@
 
 <p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<div id="tabs-1">
+Some recent news:
+<ul>
+<li> <a href="http://www.zdnet.com/article/why-ssds-are-obsolete/"> Why SSDs Are Obsolete" </a>, Robin Harris writing at ZDNet restates the potential new potential of non-volatile memory as not merely a faster disk-drive, but as a significant architectural inflection. Also contains a pointer to <a href="http://research.cs.wisc.edu/adsl/Publications/yiying-thesis13.pdf"> De-Indirection for Flash-ased SSDs </a> by Yiying Zhang which suggests some improvements for flash/disk software interfaces. <i class="Date"> Feb 2015 </i>
+<li> <a href="http://www.i-micronews.com/mems-sensors-news/5008-are-new-non-volatile-memory-technologies-about-to-enter-the-main-stream-applications-and-change-the-supply-chain.html"> Are New Non-Volatile Memory Technologies About To Enter The Main Stream Applications ... And Change The Supply Chain? </a> <i class="Date"> Jan 2015 </i>
+<li> <a href="http://www.mram-info.com/yole-sees-stt-mram-most-suitable-technology-start-replacing-dram-2018"> STT-MRAM is most suitable technology to start replacing DRAM by 2018 </a> <i class="Date"> Jan 2015 </i>
+</ul>
+</div>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<div id="tabs-2">
+The Linux Journal article covered a lot of ground very quickly and tried to show some ideas of the NVM future. There's a lot of stuff that either didn't make it in to the article, or was condensed down to mere hints.
+<p>
+<div class="faq"> Are multi-core and GPU computing just as / more important than NVM? </div>
+Multi-core CPUs have done their bit to change the way we think about computing and algorithm design but have not changed the basic system design.  Likewise, using GPUs  for off-chip processing is great, but its really just more CPU. But really, there's no good metric for "most important" architectural change.
+</div>
+
+<div id="tabs-3">
+NVM
+<ul>
+	<li> <a href="http://www.mram-info.com/"> MRAM Info site </a>
+	<li> <a href="http://web.engr.oregonstate.edu/~sllu/xie.pdf">  http://web.engr.oregonstate.edu/~sllu/xie.pdf</a>  - Emerging NVM technologies </a>
+	<li> <a href="http://institute.lanl.gov/hec-fsio/workshops/2008/presentations/day3/Wilcke-PanelTalkFlashSCM_fD.pdf"> Flash/SCM paper at 2008 HEC-FSIO conference </a>
+<li> <a href="http://pages.cs.wisc.edu/~msaxena/FlashVMpaper.html"> http://pages.cs.wisc.edu/~msaxena/FlashVMpaper.html</a>
+</ul>
+NVM Companies
+<ul>
+	<li> <a href="http://www.crossbar-inc.com"> Crossbar, Inc </a>
+	<li> <a href="http://www.crocus-technology.com"> Crocus Technologies </a>
+	<li> <a href="http://www.everspin.com/"> Everspin </a>
+	<li> <a href="http://www.hynix.com/"> Hynix </a>
+	<li> <a href="http://www.zurich.ibm.com/st/storage/resistance.html"> IBM </a>
+</ul>
+Hard Drives / Hybrid Drives
+	<ul>
+	<li> <a href="http://blogs.oracle.com/brendan/entry/unusual_disk_latency"> Unusual_disk_latency  - includes Shouting At Datacenter video </a>
+	<li> <a href="http://hardware.slashdot.org/story/11/11/30/0344252/is-the-time-finally-right-for-hybrid-hard-drives"> Slashdot: is-the-time-finally-right-for-hybrid-hard-drives </a>
+	</ul>
+Flash (NAND)
+<ul>
+	<li> <a href="http://www.storagesearch.com/ssd-buyers-guide.html"> SSD Buyers Guide blog </a>
+	<li> <a href="http://en.wikipedia.org/wiki/Flash_memory">http://en.wikipedia.org/wiki/Flash_memory</a>
+</ul>
+</div>
+
 
 <h3>
 <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
@@ -65,7 +115,7 @@ $ git checkout gh-pages
 <p>Having trouble with Pages? Check out the documentation at <a href="https://help.github.com/pages">https://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
       </section>
       <footer>
-        <p> This project is maintained by  <a class="header name" href="https://github.com/netrc">netrc</a></p>
+        <p> This project is maintained by  <a href="https://github.com/netrc">netrc</a></p>
 
         <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
       </footer>

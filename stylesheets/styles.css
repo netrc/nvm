@@ -78,7 +78,7 @@ h4, h5, h6 {
 a {
   color:#C30000;
   font-weight:200;
-  text-decoration:none;
+  text-decoration:underline;
 }
 
 a:hover {
@@ -420,4 +420,15 @@ footer {
     font-size:12pt;
     color:#444;
   }
+}
+
+
+/* netrc's style */
+i.date {
+	font-size: 10pt;
+}
+
+.faq {
+	font-style: italic;
+	font-weight: bold;
 }

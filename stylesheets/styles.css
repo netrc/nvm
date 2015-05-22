@@ -426,6 +426,7 @@ footer {
 /* netrc's style */
 i.date {
 	font-size: 10pt;
+  font-style: italic;
 }
 
 .faq {
